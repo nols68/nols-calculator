@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <style>
+      .button0 {
+        width: 55px;
+      }
+      .button1 {
+        width: 105px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Calcualtor</h3>
+
+    <p>
+   <button onclick="
+     calculation +='1';
+     console.log(calculation);
+   ">1</button>
+
+   <button onclick="
+     calculation +='2';
+     console.log(calculation);
+   ">2</button>
+   
+   <button onclick="
+     calculation +='3';
+     console.log(calculation);
+   ">3</button>
+
+   <button onclick="
+     calculation +=' + '
+     console.log(calculation);
+   ">+</button>
+    </p>
+    
+    <p>
+   <button onclick="
+      calculation +='4';
+      console.log(calculation);
+    ">4</button>
+
+   <button onclick="
+     calculation +='5';
+     console.log(calculation);
+   ">5</button>
+
+   <button onclick="
+     calculation +='6';
+     console.log(calculation);
+   ">6</button>
+
+   <button onclick="
+     calculation +=' - '
+     console.log(calculation);
+   ">-</button>
+   </p>
+
+   <p>
+   <button onclick="
+      calculation +='7'
+      console.log(calculation);
+   ">7</button>
+
+   <button onclick="
+     calculation +='8'
+     console.log(calculation);
+   ">8</button>
+
+   <button onclick="
+     calculation +='9'
+     console.log(calculation);
+   ">9</button>
+
+   <button onclick="
+     calculation +=' * '
+     console.log(calculation);
+   ">*</button>
+    </p>
+
+    <p>
+   <button class ="button0" onclick="
+      calculation +='0'
+      console.log(calculation);
+    ">0</button>
+
+   <button onclick="
+     calculation +='.'
+     console.log(calculation);
+   ">.</button>
+
+   <button onclick="
+     calculation +=' / '
+     console.log(calculation);
+   ">/</button>
+    </p>
+
+   <button class="button1"  onclick="
+      let r = calculation;
+
+     calculation = eval(calculation);
+     console.log(calculation);
+     alert( r + ' = '+ calculation);
+   ">=</button>
+
+    <p>
+   <button onclick="
+     calculation = '';
+     console.log(calculation);
+     console.log('Successfully cleared!')
+   ">Clear</button>
+    </p>
+
+    <script>
+   let calculation = '';
+    </script> 
+  </body>
+</html>
